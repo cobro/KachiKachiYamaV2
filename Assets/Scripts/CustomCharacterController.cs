@@ -6,24 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class CustomCharacterController : MonoBehaviour
 {
-
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 	private Vector3 m_Velocity = Vector3.zero;
-    public Sprite FlintStoneOutSprite;
-    public Sprite StrikingSparkSprite;
-    public Sprite  CharacterWalkingArray;
-    public float CharacterSpriteAnimationSpeed;
     public float CharacterSpeed = 0.5f;
     public float SparkStrikingTime = 0.2f;
-    public SpriteRenderer CharacterSpriteRenderer;
     public int StrikeCounter = 0;
-    public bool FlintStoneOut = false;
-    public bool StrikingSpark = false;
     bool RacoonCheckingReference;
     bool waitForNextCollisionReference;
     public bool busted = false;
     public Text SuccessfulStrikesCounter;
-
     public GameObject BustedUI;
     public GameObject YouWonUI;
     public Transform RacoonPosition;
@@ -32,9 +23,9 @@ public class CustomCharacterController : MonoBehaviour
     public float GetAPointDistance = 7f;
     public static float distanceFromRacoon;
     public Animator mainCharacterAnimator;
+    public float CharacteranimationSpeedUpper = 2f;
     void Start()
     {
-        CharacterSpriteRenderer = GetComponent<SpriteRenderer>();
         MainCharacterRB = GetComponent<Rigidbody2D>();
         mainCharacterAnimator = GetComponent<Animator>();
     }
@@ -45,17 +36,20 @@ public class CustomCharacterController : MonoBehaviour
         RacoonCheckingReference = racoonMovement.RacoonChecking;
         waitForNextCollisionReference = racoonMovement.waitForNextCollision;
 
-        if(Input.GetAxisRaw("Horizontal") <0){
-            horizontalMove = Input.GetAxisRaw("Horizontal") * CharacterSpeed;
-        }
         if(Input.GetAxisRaw("Horizontal") >0){
             horizontalMove = Input.GetAxisRaw("Horizontal") * CharacterSpeed*3;
+            mainCharacterAnimator.SetBool("WalkCycle", true);
+            mainCharacterAnimator.SetBool("Idle", false);
         }
         if(Input.GetAxisRaw("Horizontal") == 0 && distanceFromRacoon < 6f){
             horizontalMove = 0;
+            mainCharacterAnimator.SetBool("Idle", true);
+            mainCharacterAnimator.SetBool("WalkCycle", false);
         }
         if (distanceFromRacoon > 6f && Input.GetAxisRaw("Horizontal") <= 0){
             horizontalMove = CharacterSpeed;
+            mainCharacterAnimator.SetBool("WalkCycle", true);
+            mainCharacterAnimator.SetBool("Idle", false);
         }
 
         distanceFromRacoon = Mathf.Abs(RacoonPosition.transform.position.x - transform.position.x);
@@ -67,28 +61,28 @@ public class CustomCharacterController : MonoBehaviour
         
         if (Input.GetMouseButtonUp(1)){
 
-            if(FlintStoneOut == false){
-                FlintStoneOut = true;
-                Debug.Log("Flint Stone Out");
-                CharacterSpriteRenderer.sprite = FlintStoneOutSprite;
+            if(mainCharacterAnimator.GetBool("FlintStoneOut") == false){
+                mainCharacterAnimator.SetBool("FlintStoneOut", true);
             }
             else {
-            FlintStoneOut = false;
-            CharacterSpriteRenderer.sprite = CharacterWalkingArray;
+            mainCharacterAnimator.SetBool("FlintStoneOut", false);
             }
         }
 
-        if (Input.GetMouseButtonUp(0) && FlintStoneOut){
-
+        if (Input.GetMouseButtonUp(0) && mainCharacterAnimator.GetBool("FlintStoneOut") == true){
             StartCoroutine(StrikingSparkSpriteWait());
-
         }
 
-        if(FlintStoneOut == true && RacoonCheckingReference == true){
+        if(mainCharacterAnimator.GetBool("FlintStoneOut") == true && RacoonCheckingReference == true){
             busted = true;
             BustedUI.SetActive(true);
             StartCoroutine(WaitForRestart());
         }
+        mainCharacterAnimator.SetFloat("WalkCycleSpeed",Remap(Input.GetAxisRaw("Horizontal") * CharacterSpeed*3,0,CharacterSpeed*3,.5f,CharacteranimationSpeedUpper));
+    }
+
+    float Remap (float value, float from1, float to1, float from2, float to2) {
+        return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
     }
 
     void FixedUpdate(){
@@ -103,13 +97,10 @@ public class CustomCharacterController : MonoBehaviour
     }
     
     IEnumerator StrikingSparkSpriteWait(){
-        Debug.Log("Struck a spark");
-        CharacterSpriteRenderer.sprite = StrikingSparkSprite;
-        StrikingSpark = true;
+        mainCharacterAnimator.SetBool("StrikingSpark", true);
         yield return new WaitForSeconds(SparkStrikingTime);
-        StrikingSpark = false;
-        FlintStoneOut = false;
-        CharacterSpriteRenderer.sprite = CharacterWalkingArray;
+        mainCharacterAnimator.SetBool("StrikingSpark", false);
+        mainCharacterAnimator.SetBool("FlintStoneOut", false);
         if(!busted && distanceFromRacoon<GetAPointDistance){
             StrikeCounter++;
             SuccessfulStrikesCounter.text = StrikeCounter.ToString() +"/5";
@@ -123,10 +114,9 @@ public class CustomCharacterController : MonoBehaviour
 
     void Move(float move)
 	{
-			// Move the character by finding the target velocity
-			Vector3 targetVelocity = new Vector2(move * 10f, MainCharacterRB.velocity.y);
-			// And then smoothing it out and applying it to the character
-			MainCharacterRB.velocity = Vector3.SmoothDamp(MainCharacterRB.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
-
+        Vector3 targetVelocity = new Vector2(move * 10f, MainCharacterRB.velocity.y);
+        MainCharacterRB.velocity = Vector3.SmoothDamp(MainCharacterRB.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 	}
+
+
 }

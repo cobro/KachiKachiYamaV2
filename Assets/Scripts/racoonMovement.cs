@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class racoonMovement : MonoBehaviour
 {
-
     [Range(0, .3f)] [SerializeField] private float m_RacoonMovementSmoothing = .05f;	// How much to smooth out the movement
 	private Vector3 m_RacoonVelocity = Vector3.zero;
     public float RacoonSpeed = 15;
     float RacoonHorizontalMove = 0f;
     public float RandomRotationLowerLimit = 2f;
     public float RandomRotationUpperLimit = 10f;
-
     public static bool RacoonChecking = false;
     public float tempRacoonSpeed;
     float waitTime;
@@ -21,11 +19,13 @@ public class racoonMovement : MonoBehaviour
     public float RacoonSpriteAnimationSpeed;
     bool randomRotationStart = true;
     float distanceFromRacoonReference;
+    Animator racoonAnimator;
 
     public Rigidbody2D RacoonRB;
     void Start()
     {
         RacoonRB = GetComponent<Rigidbody2D>();
+        racoonAnimator = GetComponent<Animator>();
         RacoonSpriteRenderer = GetComponent<SpriteRenderer>();
         tempRacoonSpeed = RacoonSpeed;
         QuestionMark = this.transform.GetChild(0).gameObject;
@@ -39,6 +39,13 @@ public class racoonMovement : MonoBehaviour
         RacoonHorizontalMove = tempRacoonSpeed;
         randomRotationStartCall();
         CheckForRacoonRotation();
+
+        if(tempRacoonSpeed == 0){
+            racoonAnimator.SetBool("racoonWalking", false);
+            }
+        else{
+            racoonAnimator.SetBool("racoonWalking", true);
+        }
     }
 
     void FixedUpdate(){
@@ -98,13 +105,9 @@ public class racoonMovement : MonoBehaviour
         RacoonRB.isKinematic = false;
         randomRotationStart = true;
     }
-
         void RacoonMove(float move)
 	{
-			// Move the character by finding the target velocity
 			Vector3 targetVelocity = new Vector2(move * 10f, RacoonRB.velocity.y);
-			// And then smoothing it out and applying it to the character
 			RacoonRB.velocity = Vector3.SmoothDamp(RacoonRB.velocity, targetVelocity, ref m_RacoonVelocity, m_RacoonMovementSmoothing);
-
 	}
 }
