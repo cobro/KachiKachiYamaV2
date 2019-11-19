@@ -54,6 +54,7 @@ public class racoonMovement : MonoBehaviour
             StopAllCoroutines();
             tempRacoonSpeed=0;
             RacoonChecking = true;
+            QuestionMark.SetActive(false);
         }
     }
 
