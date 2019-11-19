@@ -5,9 +5,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour {
+	public Text dialogueTextRabbit;
+    public Text dialogueTextRacoon;
 
-	public Text nameText;
-	public Text dialogueText;
+    public bool rabbit = true;
+
 
 	private Queue<string> sentences;
 
@@ -18,9 +20,6 @@ public class DialogueManager : MonoBehaviour {
 
 	public void StartDialogue (Dialogue dialogue)
 	{
-
-		nameText.text = dialogue.name;
-
 		sentences.Clear();
 
 		foreach (string sentence in dialogue.sentences)
@@ -46,17 +45,34 @@ public class DialogueManager : MonoBehaviour {
 
 	IEnumerator TypeSentence (string sentence)
 	{
-		dialogueText.text = "";
-		foreach (char letter in sentence.ToCharArray())
-		{
-			dialogueText.text += letter;
-			yield return null;
-		}
+        if(rabbit){
+            dialogueTextRabbit.transform.parent.gameObject.SetActive(true);
+            dialogueTextRacoon.transform.parent.gameObject.SetActive(false);
+            dialogueTextRabbit.text = "";
+            foreach (char letter in sentence.ToCharArray())
+            {
+                dialogueTextRabbit.text += letter;
+                yield return null;
+            }
+            rabbit = false;
+        }
+        else{
+            dialogueTextRabbit.transform.parent.gameObject.SetActive(false);
+            dialogueTextRacoon.transform.parent.gameObject.SetActive(true);
+            dialogueTextRacoon.text = "";
+            foreach (char letter in sentence.ToCharArray())
+            {
+                dialogueTextRacoon.text += letter;
+                yield return null;
+            }
+            rabbit = true;
+        }
 	}
 
 	void EndDialogue()
 	{
-		
+		dialogueTextRabbit.transform.parent.gameObject.SetActive(false);
+        dialogueTextRacoon.transform.parent.gameObject.SetActive(false);
 	}
 
 }

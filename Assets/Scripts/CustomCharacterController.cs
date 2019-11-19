@@ -70,6 +70,7 @@ public class CustomCharacterController : MonoBehaviour
         }
 
         if (Input.GetMouseButtonUp(0) && mainCharacterAnimator.GetBool("FlintStoneOut") == true){
+            mainCharacterAnimator.SetBool("StrikingSpark", true);
             StartCoroutine(StrikingSparkSpriteWait());
         }
 
@@ -97,7 +98,6 @@ public class CustomCharacterController : MonoBehaviour
     }
     
     IEnumerator StrikingSparkSpriteWait(){
-        mainCharacterAnimator.SetBool("StrikingSpark", true);
         yield return new WaitForSeconds(SparkStrikingTime);
         mainCharacterAnimator.SetBool("StrikingSpark", false);
         mainCharacterAnimator.SetBool("FlintStoneOut", false);
