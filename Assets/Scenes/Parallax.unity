@@ -341,7 +341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 566134900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.521631, y: -2.5299997, z: -10}
+  m_LocalPosition: {x: -0.4549532, y: -2.5299997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1766603749}
@@ -880,7 +880,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958318137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.521631, y: -2.5299997, z: -10}
+  m_LocalPosition: {x: -0.4549532, y: -2.5299997, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1784115463}
@@ -1172,7 +1172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RacoonMovementSmoothing: 0.05
-  RacoonSpeed: 2
+  RacoonSpeed: 10
   RandomRotationLowerLimit: 2
   RandomRotationUpperLimit: 10
   tempRacoonSpeed: 0
@@ -1245,7 +1245,7 @@ MonoBehaviour:
     type: 3}
   CharacterWalkingArray: {fileID: 0}
   CharacterSpriteAnimationSpeed: 0
-  CharacterSpeed: 4
+  CharacterSpeed: 10
   SparkStrikingTime: 0.2
   CharacterSpriteRenderer: {fileID: 0}
   StrikeCounter: 0
@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
-  m_ScreenX: 0.614
+  m_ScreenX: 0.669
   m_ScreenY: 0.595
   m_CameraDistance: 10
   m_DeadZoneWidth: 0

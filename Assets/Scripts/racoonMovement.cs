@@ -60,7 +60,7 @@ public class racoonMovement : MonoBehaviour
     }
 
     void randomRotationStartCall(){
-        if(distanceFromRacoonReference<15 && randomRotationStart && !waitForNextCollision){
+        if(distanceFromRacoonReference<4 && randomRotationStart && !waitForNextCollision){
             randomRotationStart = false;
             StartCoroutine("RandomlyRotate");
         }

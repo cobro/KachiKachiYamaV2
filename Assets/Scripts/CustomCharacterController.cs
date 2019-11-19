@@ -51,14 +51,15 @@ public class CustomCharacterController : MonoBehaviour
         if(Input.GetAxisRaw("Horizontal") >0){
             horizontalMove = Input.GetAxisRaw("Horizontal") * CharacterSpeed*3;
         }
-        if(Input.GetAxisRaw("Horizontal") == 0 && distanceFromRacoon < 25f){
+        if(Input.GetAxisRaw("Horizontal") == 0 && distanceFromRacoon < 6f){
             horizontalMove = 0;
         }
-        if (distanceFromRacoon > 25f && Input.GetAxisRaw("Horizontal") <= 0){
+        if (distanceFromRacoon > 6f && Input.GetAxisRaw("Horizontal") <= 0){
             horizontalMove = CharacterSpeed;
         }
 
         distanceFromRacoon = Mathf.Abs(RacoonPosition.transform.position.x - transform.position.x);
+        Debug.Log(distanceFromRacoon);
 
         if(StrikeCounter == 5){
             YouWonUI.SetActive(true);
