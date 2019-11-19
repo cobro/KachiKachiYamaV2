@@ -24,6 +24,7 @@ public class CustomCharacterController : MonoBehaviour
     public static float distanceFromRacoon;
     public Animator mainCharacterAnimator;
     public float CharacteranimationSpeedUpper = 2f;
+    public static float particleVariable;
     void Start()
     {
         MainCharacterRB = GetComponent<Rigidbody2D>();
@@ -103,6 +104,7 @@ public class CustomCharacterController : MonoBehaviour
         mainCharacterAnimator.SetBool("FlintStoneOut", false);
         if(!busted && distanceFromRacoon<GetAPointDistance){
             StrikeCounter++;
+            particleVariable++;
             SuccessfulStrikesCounter.text = StrikeCounter.ToString() +"/5";
         }
         StopCoroutine("StrikingSparkSpriteWait");

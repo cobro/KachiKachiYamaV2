@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour {
 		}
 
 		string sentence = sentences.Dequeue();
-		StopCoroutine("TypeSentence");
+		StopAllCoroutines();
 		StartCoroutine(TypeSentence(sentence));
 	}
 
@@ -49,23 +49,23 @@ public class DialogueManager : MonoBehaviour {
             dialogueTextRabbit.transform.parent.gameObject.SetActive(true);
             dialogueTextRacoon.transform.parent.gameObject.SetActive(false);
             dialogueTextRabbit.text = "";
+            rabbit = false;
             foreach (char letter in sentence.ToCharArray())
             {
                 dialogueTextRabbit.text += letter;
                 yield return null;
             }
-            rabbit = false;
         }
         else{
             dialogueTextRabbit.transform.parent.gameObject.SetActive(false);
             dialogueTextRacoon.transform.parent.gameObject.SetActive(true);
             dialogueTextRacoon.text = "";
+            rabbit = true;
             foreach (char letter in sentence.ToCharArray())
             {
                 dialogueTextRacoon.text += letter;
                 yield return null;
             }
-            rabbit = true;
         }
 	}
 

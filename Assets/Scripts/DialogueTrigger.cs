@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour {
 
-	public Dialogue dialogue;
+	public Dialogue dialogueIntro;
+    public Dialogue dialogueMeeting;
+    public Dialogue burntRacoon1;
+    public Dialogue burntRacoon2;
+    public Dialogue burntRacoon3;
+    public Dialogue burntRacoon4;
+    public Dialogue burntRacoon5;
+    public Dialogue dialogueLost;
 
-	public void TriggerDialogue ()
+    public Dialogue dialogueWon;
+
+	public void TriggerDialogue (Dialogue tempDialogue)
 	{
-		FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+		FindObjectOfType<DialogueManager>().StartDialogue(tempDialogue);
 	}
 
 }

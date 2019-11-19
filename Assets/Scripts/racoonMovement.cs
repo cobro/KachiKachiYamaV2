@@ -16,6 +16,7 @@ public class racoonMovement : MonoBehaviour
     public static bool waitForNextCollision = false;
     public SpriteRenderer RacoonSpriteRenderer;
     public GameObject QuestionMark;
+    public GameObject ParticleHolder;
     public float RacoonSpriteAnimationSpeed;
     bool randomRotationStart = true;
     float distanceFromRacoonReference;
@@ -76,9 +77,11 @@ public class racoonMovement : MonoBehaviour
     void CheckForRacoonRotation(){
         if(RacoonChecking){
                 RacoonSpriteRenderer.flipX = true;
+                ParticleHolder.transform.localScale = new Vector3(-1,1,1);
             }
         else{
             RacoonSpriteRenderer.flipX = false;
+            ParticleHolder.transform.localScale = new Vector3(1,1,1);
         }
     }
 

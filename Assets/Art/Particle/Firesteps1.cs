@@ -5,6 +5,7 @@ public class Firesteps1 : MonoBehaviour
 {
     private ParticleSystem ps;
     public float fireStep = 0.5f;
+    float getValuefromCharacter;
 
     void Start()
     {
@@ -13,8 +14,9 @@ public class Firesteps1 : MonoBehaviour
 
     void Update()
     {
+        getValuefromCharacter = CustomCharacterController.particleVariable;
         var emission = ps.emission;
-        emission.rateOverTime = fireStep;
+        emission.rateOverTime = getValuefromCharacter;
     }
 
 }
