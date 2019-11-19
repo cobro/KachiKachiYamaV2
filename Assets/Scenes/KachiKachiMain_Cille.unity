@@ -1564,8 +1564,8 @@ MonoBehaviour:
   RandomRotationUpperLimit: 6
   tempRacoonSpeed: 0
   RacoonSpriteRenderer: {fileID: 0}
+  QuestionMark: {fileID: 0}
   RacoonSpriteAnimationSpeed: 1
-  animateRacoon: 1
   RacoonRB: {fileID: 1168336378}
 --- !u!212 &1168336375
 SpriteRenderer:
@@ -2689,7 +2689,7 @@ MonoBehaviour:
   RacoonPosition: {fileID: 1168336376}
   MainCharacterRB: {fileID: 0}
   GetAPointDistance: 1.5
-  distanceFromRacoon: 0
+  mainCharacterAnimator: {fileID: 0}
 --- !u!61 &2034268296
 BoxCollider2D:
   m_ObjectHideFlags: 0
