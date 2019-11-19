@@ -30,13 +30,13 @@ public class CustomCharacterController : MonoBehaviour
     float horizontalMove = 0f;
     public Rigidbody2D MainCharacterRB;
     public float GetAPointDistance = 7f;
-
     public static float distanceFromRacoon;
+    public Animator mainCharacterAnimator;
     void Start()
     {
         CharacterSpriteRenderer = GetComponent<SpriteRenderer>();
         MainCharacterRB = GetComponent<Rigidbody2D>();
-        
+        mainCharacterAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -59,7 +59,6 @@ public class CustomCharacterController : MonoBehaviour
         }
 
         distanceFromRacoon = Mathf.Abs(RacoonPosition.transform.position.x - transform.position.x);
-        Debug.Log(distanceFromRacoon);
 
         if(StrikeCounter == 5){
             YouWonUI.SetActive(true);
