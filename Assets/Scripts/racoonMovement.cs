@@ -10,10 +10,10 @@ public class racoonMovement : MonoBehaviour
     float RacoonHorizontalMove = 0f;
     public float RandomRotationLowerLimit = 2f;
     public float RandomRotationUpperLimit = 10f;
-    public static bool RacoonChecking = false;
+    public static bool RacoonChecking;
     public float tempRacoonSpeed;
     float waitTime;
-    public static bool waitForNextCollision = false;
+    public static bool waitForNextCollision;
     public SpriteRenderer RacoonSpriteRenderer;
     public GameObject QuestionMark;
     public GameObject ParticleHolder;
@@ -25,6 +25,8 @@ public class racoonMovement : MonoBehaviour
     public Rigidbody2D RacoonRB;
     void Start()
     {
+        waitForNextCollision = false;
+        RacoonChecking = false;
         RacoonRB = GetComponent<Rigidbody2D>();
         racoonAnimator = GetComponent<Animator>();
         RacoonSpriteRenderer = GetComponent<SpriteRenderer>();
@@ -46,6 +48,12 @@ public class racoonMovement : MonoBehaviour
             }
         else{
             racoonAnimator.SetBool("racoonWalking", true);
+        }
+
+        if(CustomCharacterController.busted == true || CustomCharacterController.StrikeCounter == 5){
+            StopAllCoroutines();
+            tempRacoonSpeed=0;
+            RacoonChecking = true;
         }
     }
 

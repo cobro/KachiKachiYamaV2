@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Parallax Alt.unity
+    guid: 8e17a9eb4703d49e5b13c300bfe22cab
   m_configObjects: {}

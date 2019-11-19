@@ -265,7 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 264745391}
   - component: {fileID: 264745392}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: foreground2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 354856421}
   - component: {fileID: 354856422}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: hills
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +574,7 @@ GameObject:
   - component: {fileID: 586368295}
   - component: {fileID: 586368297}
   - component: {fileID: 586368296}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Beginning2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5445,7 +5445,7 @@ GameObject:
   - component: {fileID: 691298765}
   - component: {fileID: 691298766}
   - component: {fileID: 691298767}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Parallax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5813,7 +5813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 938023469}
   - component: {fileID: 938023470}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: clouds2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5897,7 +5897,7 @@ GameObject:
   - component: {fileID: 958318141}
   - component: {fileID: 958318143}
   - component: {fileID: 958318142}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -6037,7 +6037,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 958318140}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
   antialiasingMode: 0
@@ -6221,7 +6221,7 @@ GameObject:
   - component: {fileID: 1016420699}
   - component: {fileID: 1016420701}
   - component: {fileID: 1016420700}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Won
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6475,7 +6475,7 @@ GameObject:
   - component: {fileID: 1269475107}
   - component: {fileID: 1269475109}
   - component: {fileID: 1269475108}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Lost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6930,7 +6930,7 @@ GameObject:
   - component: {fileID: 1465825207}
   - component: {fileID: 1465825209}
   - component: {fileID: 1465825208}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Beginning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7490,7 +7490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1664123861}
   - component: {fileID: 1664123862}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: foreground1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7734,7 +7734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1784115463}
   - component: {fileID: 1784115462}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7894,7 +7894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1845925096}
   - component: {fileID: 1845925097}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: clouds1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13289,7 +13289,7 @@ GameObject:
   - component: {fileID: 6160469033316079328}
   - component: {fileID: 6160469033316079342}
   - component: {fileID: 6160469033316079329}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SuccesfulStrikeCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13377,7 +13377,7 @@ GameObject:
   - component: {fileID: 6160469033912395507}
   - component: {fileID: 6160469033912395506}
   - component: {fileID: 6160469033912395510}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

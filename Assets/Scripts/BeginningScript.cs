@@ -35,7 +35,7 @@ public class BeginningScript : MonoBehaviour
     }
 
     void Update(){
-        if(Input.GetKeyUp(KeyCode.F)){
+        if(Input.GetKeyUp(KeyCode.F) || Input.GetButtonUp("buttonA")){
             nextSentence.DisplayNextSentence();
         }
     }

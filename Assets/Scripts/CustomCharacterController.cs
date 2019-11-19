@@ -10,10 +10,10 @@ public class CustomCharacterController : MonoBehaviour
 	private Vector3 m_Velocity = Vector3.zero;
     public float CharacterSpeed = 0.5f;
     public float SparkStrikingTime = 0.2f;
-    public int StrikeCounter = 0;
+    public static int StrikeCounter;
     bool RacoonCheckingReference;
     bool waitForNextCollisionReference;
-    public bool busted = false;
+    public static bool busted;
     public Text SuccessfulStrikesCounter;
     public GameObject BustedUI;
     public GameObject YouWonUI;
@@ -25,8 +25,12 @@ public class CustomCharacterController : MonoBehaviour
     public Animator mainCharacterAnimator;
     public float CharacteranimationSpeedUpper = 2f;
     public static float particleVariable;
+    public DialogueTrigger triggerEndDialogue;
     void Start()
     {
+        busted = false;
+        StrikeCounter = 0;
+        particleVariable = 0;
         MainCharacterRB = GetComponent<Rigidbody2D>();
         mainCharacterAnimator = GetComponent<Animator>();
     }
@@ -56,11 +60,11 @@ public class CustomCharacterController : MonoBehaviour
         distanceFromRacoon = Mathf.Abs(RacoonPosition.transform.position.x - transform.position.x);
 
         if(StrikeCounter == 5){
-            YouWonUI.SetActive(true);
-            StartCoroutine(WaitForRestart());
+            StrikeCounter = 0;
+            StartCoroutine(WaitForRestartWon());
         }
         
-        if (Input.GetMouseButtonUp(1)){
+        if (Input.GetMouseButtonUp(1) || Input.GetButtonUp("buttonX")){
 
             if(mainCharacterAnimator.GetBool("FlintStoneOut") == false){
                 mainCharacterAnimator.SetBool("FlintStoneOut", true);
@@ -70,15 +74,16 @@ public class CustomCharacterController : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonUp(0) && mainCharacterAnimator.GetBool("FlintStoneOut") == true){
+        if (Input.GetMouseButtonUp(0) || Input.GetButtonUp("buttonB")){
+            if(mainCharacterAnimator.GetBool("FlintStoneOut") == true){
             mainCharacterAnimator.SetBool("StrikingSpark", true);
             StartCoroutine(StrikingSparkSpriteWait());
+            }
         }
 
-        if(mainCharacterAnimator.GetBool("FlintStoneOut") == true && RacoonCheckingReference == true){
-            busted = true;
-            BustedUI.SetActive(true);
-            StartCoroutine(WaitForRestart());
+        if(mainCharacterAnimator.GetBool("FlintStoneOut") == true && RacoonCheckingReference == true && busted == false){
+            busted = true;            
+            StartCoroutine(WaitForRestartLost());
         }
         mainCharacterAnimator.SetFloat("WalkCycleSpeed",Remap(Input.GetAxisRaw("Horizontal") * CharacterSpeed*3,0,CharacterSpeed*3,.6f,CharacteranimationSpeedUpper));
     }
@@ -109,11 +114,19 @@ public class CustomCharacterController : MonoBehaviour
         }
         StopCoroutine("StrikingSparkSpriteWait");
     }
-    IEnumerator WaitForRestart(){
-        yield return new WaitForSeconds(3f);
+    IEnumerator WaitForRestartLost(){
+        triggerEndDialogue.TriggerDialogue(triggerEndDialogue.dialogueLost);
+        yield return new WaitForSeconds(2f);
+        BustedUI.SetActive(true);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
+        IEnumerator WaitForRestartWon(){
+        triggerEndDialogue.TriggerDialogue(triggerEndDialogue.dialogueWon);
+        yield return new WaitForSeconds(10f);
+        YouWonUI.SetActive(true);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    
     void Move(float move)
 	{
         Vector3 targetVelocity = new Vector2(move * 10f, MainCharacterRB.velocity.y);
