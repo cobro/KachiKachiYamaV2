@@ -78,7 +78,7 @@ public class CustomCharacterController : MonoBehaviour
             BustedUI.SetActive(true);
             StartCoroutine(WaitForRestart());
         }
-        mainCharacterAnimator.SetFloat("WalkCycleSpeed",Remap(Input.GetAxisRaw("Horizontal") * CharacterSpeed*3,0,CharacterSpeed*3,.5f,CharacteranimationSpeedUpper));
+        mainCharacterAnimator.SetFloat("WalkCycleSpeed",Remap(Input.GetAxisRaw("Horizontal") * CharacterSpeed*3,0,CharacterSpeed*3,.6f,CharacteranimationSpeedUpper));
     }
 
     float Remap (float value, float from1, float to1, float from2, float to2) {
