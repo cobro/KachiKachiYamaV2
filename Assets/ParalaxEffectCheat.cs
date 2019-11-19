@@ -10,6 +10,8 @@ public class ParalaxEffectCheat : MonoBehaviour
     [Range(0f, 1f)]
     public float thisParallaxSpeed = 1;
     Vector2 newVelocity;
+    Vector2 tempVelocity = Vector2.zero;
+    float lerpspeed = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +27,8 @@ public class ParalaxEffectCheat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        newVelocity = new Vector2(-mainCamera.velocity.x * thisParallaxSpeed, 0);
-        thisElementRB.velocity = newVelocity;
+        newVelocity = new Vector2(mainCamera.velocity.x * thisParallaxSpeed, 0);
+        thisElementRB.velocity = Vector2.Lerp(tempVelocity,newVelocity, Time.deltaTime *  lerpspeed);
+        tempVelocity = newVelocity;
     }
 }

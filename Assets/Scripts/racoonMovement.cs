@@ -7,33 +7,37 @@ public class racoonMovement : MonoBehaviour
 
     [Range(0, .3f)] [SerializeField] private float m_RacoonMovementSmoothing = .05f;	// How much to smooth out the movement
 	private Vector3 m_RacoonVelocity = Vector3.zero;
-    public float RacoonSpeed;
-     float RacoonHorizontalMove = 0f;
+    public float RacoonSpeed = 15;
+    float RacoonHorizontalMove = 0f;
     public float RandomRotationLowerLimit = 2f;
     public float RandomRotationUpperLimit = 10f;
 
     public static bool RacoonChecking = false;
     public float tempRacoonSpeed;
     float waitTime;
-    public static bool waitFornextCollision = false;
+    public static bool waitForNextCollision = false;
     public SpriteRenderer RacoonSpriteRenderer;
-
+    public GameObject QuestionMark;
     public float RacoonSpriteAnimationSpeed;
-
-    public bool animateRacoon = true;
+    bool randomRotationStart = true;
+    float distanceFromRacoonReference;
 
     public Rigidbody2D RacoonRB;
     void Start()
     {
         RacoonRB = GetComponent<Rigidbody2D>();
         RacoonSpriteRenderer = GetComponent<SpriteRenderer>();
-        StartCoroutine("RandomlyRotate");
+        tempRacoonSpeed = RacoonSpeed;
+        QuestionMark = this.transform.GetChild(0).gameObject;
+        QuestionMark.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        RacoonHorizontalMove = RacoonSpeed;
+        distanceFromRacoonReference = CustomCharacterController.distanceFromRacoon;
+        RacoonHorizontalMove = tempRacoonSpeed;
+        randomRotationStartCall();
         CheckForRacoonRotation();
     }
 
@@ -44,14 +48,22 @@ public class racoonMovement : MonoBehaviour
     IEnumerator RandomlyRotate(){
         waitTime = Random.Range(RandomRotationLowerLimit,RandomRotationUpperLimit);
         yield return new WaitForSeconds(waitTime);  
-        tempRacoonSpeed = RacoonSpeed;
-        RacoonSpeed = 0;
-        yield return new WaitForSeconds(Random.Range(.1f,.5f));
+        tempRacoonSpeed = 0;
+        QuestionMark.SetActive(true);
+        yield return new WaitForSeconds(Random.Range(.5f,1f));
+        QuestionMark.SetActive(false);
         RacoonChecking = true;
         yield return new WaitForSeconds(Random.Range(1,2));
         RacoonChecking = false;
-        RacoonSpeed = 10f;
-        StartCoroutine("RandomlyRotate");
+        tempRacoonSpeed = RacoonSpeed;
+        randomRotationStart = true;
+    }
+
+    void randomRotationStartCall(){
+        if(distanceFromRacoonReference<15 && randomRotationStart && !waitForNextCollision){
+            randomRotationStart = false;
+            StartCoroutine("RandomlyRotate");
+        }
     }
 
     void CheckForRacoonRotation(){
@@ -64,25 +76,27 @@ public class racoonMovement : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collision){
-        if(collision.gameObject.tag == "Player" && waitFornextCollision == false){
+        if(collision.gameObject.tag == "Player" && waitForNextCollision == false){
             StopCoroutine("RandomlyRotate");
             StartCoroutine("LookingBackCausedByCollision");
         }
     }
 
     IEnumerator LookingBackCausedByCollision(){
-        waitFornextCollision = true;
+        waitForNextCollision = true;
         Debug.Log("Collided with Racoon");
-        tempRacoonSpeed = RacoonSpeed;
-        RacoonSpeed = 0;
-        yield return new WaitForSeconds(Random.Range(.1f,.5f));
+        RacoonRB.isKinematic = true;
+        tempRacoonSpeed = 0;
+        QuestionMark.SetActive(true);
+        yield return new WaitForSeconds(Random.Range(.3f,.5f));
+        QuestionMark.SetActive(false);
         RacoonChecking = true;
         yield return new WaitForSeconds(Random.Range(1,2));
         RacoonChecking = false;
-        RacoonSpeed = 10f;
-        waitFornextCollision = false;
-        StartCoroutine("RandomlyRotate");
-        
+        tempRacoonSpeed = RacoonSpeed;
+        waitForNextCollision = false;
+        RacoonRB.isKinematic = false;
+        randomRotationStart = true;
     }
 
         void RacoonMove(float move)
