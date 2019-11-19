@@ -19,7 +19,8 @@ public class CustomCharacterController : MonoBehaviour
     public int StrikeCounter = 0;
     public bool FlintStoneOut = false;
     public bool StrikingSpark = false;
-    static bool RacoonCheckingReference;
+    bool RacoonCheckingReference;
+    bool waitForNextCollisionReference;
     public bool busted = false;
     public Text SuccessfulStrikesCounter;
 
@@ -28,9 +29,9 @@ public class CustomCharacterController : MonoBehaviour
     public Transform RacoonPosition;
     float horizontalMove = 0f;
     public Rigidbody2D MainCharacterRB;
-    public float GetAPointDistance = 2f;
+    public float GetAPointDistance = 7f;
 
-    public float distanceFromRacoon;
+    public static float distanceFromRacoon;
     void Start()
     {
         CharacterSpriteRenderer = GetComponent<SpriteRenderer>();
@@ -42,22 +43,20 @@ public class CustomCharacterController : MonoBehaviour
     void Update()
     {
         RacoonCheckingReference = racoonMovement.RacoonChecking;
-
+        waitForNextCollisionReference = racoonMovement.waitForNextCollision;
 
         if(Input.GetAxisRaw("Horizontal") <0){
             horizontalMove = Input.GetAxisRaw("Horizontal") * CharacterSpeed;
         }
         if(Input.GetAxisRaw("Horizontal") >0){
-            horizontalMove = Input.GetAxisRaw("Horizontal") * CharacterSpeed*2;
+            horizontalMove = Input.GetAxisRaw("Horizontal") * CharacterSpeed*3;
         }
-        if(distanceFromRacoon<6.5f && Input.GetAxisRaw("Horizontal") == 0){
+        if(Input.GetAxisRaw("Horizontal") == 0 && distanceFromRacoon < 25f){
             horizontalMove = 0;
         }
-        else if (distanceFromRacoon > 40f){
+        if (distanceFromRacoon > 25f && Input.GetAxisRaw("Horizontal") <= 0){
             horizontalMove = CharacterSpeed;
         }
-
-        //Debug.Log(distanceFromRacoon);
 
         distanceFromRacoon = Mathf.Abs(RacoonPosition.transform.position.x - transform.position.x);
 
@@ -104,6 +103,7 @@ public class CustomCharacterController : MonoBehaviour
     }
     
     IEnumerator StrikingSparkSpriteWait(){
+        Debug.Log("Struck a spark");
         CharacterSpriteRenderer.sprite = StrikingSparkSprite;
         StrikingSpark = true;
         yield return new WaitForSeconds(SparkStrikingTime);
@@ -114,6 +114,7 @@ public class CustomCharacterController : MonoBehaviour
             StrikeCounter++;
             SuccessfulStrikesCounter.text = StrikeCounter.ToString() +"/5";
         }
+        StopCoroutine("StrikingSparkSpriteWait");
     }
     IEnumerator WaitForRestart(){
         yield return new WaitForSeconds(3f);

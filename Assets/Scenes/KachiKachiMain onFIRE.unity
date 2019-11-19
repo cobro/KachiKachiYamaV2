@@ -1306,12 +1306,12 @@ PrefabInstance:
     - target: {fileID: 2648376649015744445, guid: 5124d217a920e4ec8ad497848f7cf91c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.37
+      value: -2.09
       objectReference: {fileID: 0}
     - target: {fileID: 2648376649015744445, guid: 5124d217a920e4ec8ad497848f7cf91c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.32
+      value: 2.48
       objectReference: {fileID: 0}
     - target: {fileID: 2648376649015744445, guid: 5124d217a920e4ec8ad497848f7cf91c,
         type: 3}
@@ -1357,36 +1357,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648376649015744435, guid: 5124d217a920e4ec8ad497848f7cf91c,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 3.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648376649015744435, guid: 5124d217a920e4ec8ad497848f7cf91c,
-        type: 3}
-      propertyPath: InitialModule.size3D
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648376649015744435, guid: 5124d217a920e4ec8ad497848f7cf91c,
-        type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648376649015744435, guid: 5124d217a920e4ec8ad497848f7cf91c,
-        type: 3}
-      propertyPath: ShapeModule.radius.value
-      value: 1.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648376649015744435, guid: 5124d217a920e4ec8ad497848f7cf91c,
-        type: 3}
-      propertyPath: VelocityModule.y.scalar
-      value: -0.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648376649015744435, guid: 5124d217a920e4ec8ad497848f7cf91c,
-        type: 3}
-      propertyPath: ShapeModule.angle
-      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5124d217a920e4ec8ad497848f7cf91c, type: 3}
