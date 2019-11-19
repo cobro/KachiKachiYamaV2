@@ -1,0 +1,1351 @@
+fileFormatVersion: 2
+guid: 6d7ff594e4e908042939d73cde5df60d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8709967590931530172
+    second: branch2
+  - first:
+      213: -1056616420341018127
+    second: branch3
+  - first:
+      213: -1011449144944169485
+    second: branch6
+  - first:
+      213: -7791310521129349128
+    second: bushes_3
+  - first:
+      213: 4355408844399436851
+    second: branch1
+  - first:
+      213: -8642113388611390753
+    second: branch4
+  - first:
+      213: 4868447789864433124
+    second: branch5
+  - first:
+      213: 5609449444775143431
+    second: branch7
+  - first:
+      213: 1673763140472077391
+    second: branch8
+  - first:
+      213: -3483406007951977478
+    second: branch9
+  - first:
+      213: 1593692458009967042
+    second: branch10
+  - first:
+      213: -2692358338166458612
+    second: branch11
+  - first:
+      213: -3575990785237477820
+    second: branch12
+  - first:
+      213: -5218760116525079075
+    second: branch13
+  - first:
+      213: 3182851117704496394
+    second: branch14
+  - first:
+      213: 3078395322512831007
+    second: branch15
+  - first:
+      213: 9122699504133559769
+    second: branch16
+  - first:
+      213: -5408204919173709275
+    second: bushes_17
+  - first:
+      213: 131024129486150166
+    second: bush1
+  - first:
+      213: 1832836228112719993
+    second: bushes_19
+  - first:
+      213: -1662762084873223566
+    second: bush2
+  - first:
+      213: 603925752485205682
+    second: bushes_21
+  - first:
+      213: -4131156233002319796
+    second: bushes_22
+  - first:
+      213: 4295125934787970533
+    second: bush3
+  - first:
+      213: 2579843194697039335
+    second: bush4
+  - first:
+      213: 4705296974886403834
+    second: bushes_25
+  - first:
+      213: -7318510672094407032
+    second: bush5
+  - first:
+      213: 3178967025071674925
+    second: bush6
+  - first:
+      213: 6970079641576756620
+    second: bush7
+  - first:
+      213: -9075276119306974997
+    second: bush8
+  - first:
+      213: 715313826670981199
+    second: bush9
+  - first:
+      213: -9056722851313913046
+    second: bush10
+  - first:
+      213: -8217873280145722493
+    second: bush12
+  - first:
+      213: 1402775219136681726
+    second: bushes_33
+  - first:
+      213: 5213382078998220212
+    second: leafs1
+  - first:
+      213: 6405263996602732267
+    second: leafs2
+  - first:
+      213: -7101886693777667249
+    second: leafs3
+  - first:
+      213: 2834025895277919815
+    second: leafs4
+  - first:
+      213: -8125951404793640075
+    second: leafs5
+  - first:
+      213: 4979823591759634009
+    second: leafs6
+  - first:
+      213: -7044569280470621308
+    second: leafs7
+  - first:
+      213: -2019578556229538843
+    second: leafs8
+  - first:
+      213: -8175200748217776895
+    second: leafs9
+  - first:
+      213: -8504302182674944610
+    second: leafs10
+  - first:
+      213: -1003865575909558175
+    second: leafs11
+  - first:
+      213: -5414454426381295161
+    second: leafs12
+  - first:
+      213: 2116567956250756550
+    second: leafs13
+  - first:
+      213: -2664423059322203906
+    second: leafs14
+  - first:
+      213: 6253387023558726209
+    second: bushes_48
+  - first:
+      213: -1366677981984774684
+    second: bushes_0
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: branch2
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 2262
+        width: 283
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e99a0d1869e7624b9f6266e20c039ff
+      internalID: 8709967590931530172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch3
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 2253
+        width: 253
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0748f1e6da39ad419f8f6a00231e209
+      internalID: -1056616420341018127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch6
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 2232
+        width: 155
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cfc4f7709ce9d45ada869a1adf382e
+      internalID: -1011449144944169485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes_3
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 2512
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1586ce2e5e67c7d4d941e59b9d8e275c
+      internalID: -7791310521129349128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch1
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 2269
+        width: 279
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415cdd94b66dd8f45a8d829e1c52cd97
+      internalID: 4355408844399436851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch4
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 2251
+        width: 113
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adff13b07b3c214eb164071c29fb388
+      internalID: -8642113388611390753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch5
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 2235
+        width: 219
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead0102124d98404c8e40938c8b4b8f9
+      internalID: 4868447789864433124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch7
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 2222
+        width: 262
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ccf1956a3d8ec499fbdc9e6dc673fc
+      internalID: 5609449444775143431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch8
+      rect:
+        serializedVersion: 2
+        x: 2525
+        y: 2173
+        width: 105
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb635c0c271ce4a49b8122194ff38f6e
+      internalID: 1673763140472077391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch9
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1699
+        width: 278
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2720361324b73542b80da91ef753236
+      internalID: -3483406007951977478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch10
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1662
+        width: 282
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531e5f6447a33c145b067a176ca8c02c
+      internalID: 1593692458009967042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch11
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 1655
+        width: 253
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba4250472c7b4545943fe8b210abc5d
+      internalID: -2692358338166458612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch12
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1652
+        width: 114
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a2c2f4457a41c449a40a9867a27359
+      internalID: -3575990785237477820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch13
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 1636
+        width: 218
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3479d96c4c96fba44b9c707a42c3c598
+      internalID: -5218760116525079075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch14
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 1634
+        width: 164
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d42fe03693fdb24c933ee2d617575d0
+      internalID: 3182851117704496394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch15
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 1652
+        width: 261
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f9ab14d83b34045877dfce9bd13d85
+      internalID: 3078395322512831007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: branch16
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1602
+        width: 105
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3f00d70f7aabd4ba3a0d380131a6e3
+      internalID: 9122699504133559769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes_17
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 964
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab3035fdbe46c84db4c3adbfdf0e045
+      internalID: -5408204919173709275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 944
+        width: 501
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47522cc6575640c45aa023126572e911
+      internalID: 131024129486150166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes_19
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 964
+        width: 5
+        height: 15
+      alignment: 9
+      pivot: {x: 0.46616492, y: 0.4822634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8417f2689548b444b94fbf578fb7b0ac
+      internalID: 1832836228112719993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush2
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 942
+        width: 694
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2790ea632df99334c98a97ebe92cc3ec
+      internalID: -1662762084873223566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes_21
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 777
+        width: 23
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae32c523d83d53a4da19f4de934cf171
+      internalID: 603925752485205682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes_22
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 957
+        width: 5
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26021cac79a4f384bbed501b06cb0cbd
+      internalID: -4131156233002319796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush3
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 935
+        width: 588
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773c070785657b5408e4606b3487bde1
+      internalID: 4295125934787970533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush4
+      rect:
+        serializedVersion: 2
+        x: 2433
+        y: 946
+        width: 420
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f879b0c274e9d3148a31cbf338e90c89
+      internalID: 2579843194697039335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes_25
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 632
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36990bf6640d3b418dac69159fe8657
+      internalID: 4705296974886403834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 523
+        width: 531
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8aaa23c52ea8b48a70f854a010083e
+      internalID: -7318510672094407032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush6
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 527
+        width: 489
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a4052f5bedcf046a61980d1bbb11f3
+      internalID: 3178967025071674925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush7
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 510
+        width: 325
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f3a1c9a8ce0b847aa438ad1a95e4b0
+      internalID: 6970079641576756620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush8
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 529
+        width: 198
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2c47c8da67242428576a0443bdae3b
+      internalID: -9075276119306974997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush9
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 530
+        width: 163
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b4d934f2b45e7479f1d9b04fff1e3a
+      internalID: 715313826670981199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush10
+      rect:
+        serializedVersion: 2
+        x: 2327
+        y: 519
+        width: 228
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d73198a5ab2e4498fa96be50cbec1f
+      internalID: -9056722851313913046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush12
+      rect:
+        serializedVersion: 2
+        x: 2626
+        y: 572
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd62007d923399e478477cb3421abf09
+      internalID: -8217873280145722493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes_33
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 571
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32793cd389dc88c46b243f775ed6e651
+      internalID: 1402775219136681726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs1
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 158
+        width: 149
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b50416d36319b47a4bb7e5a73795fc
+      internalID: 5213382078998220212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs2
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 166
+        width: 145
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ff6068cb749c945a0d8755f9b0bb09
+      internalID: 6405263996602732267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs3
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 172
+        width: 158
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494fdbf21ca1a6a4fbbdab3330735af1
+      internalID: -7101886693777667249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs4
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 176
+        width: 136
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b2727c050fb324181e39b4d9929aaa
+      internalID: 2834025895277919815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs5
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 170
+        width: 52
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18249ec877b0bb4bb0035a717808e5b
+      internalID: -8125951404793640075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs6
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 185
+        width: 52
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4b5c5004f9e9d448e07037c193f707
+      internalID: 4979823591759634009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs7
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 180
+        width: 52
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddee6deeaa3e5f442950336356c1546f
+      internalID: -7044569280470621308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs8
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 207
+        width: 53
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21b31a8873bf774bb354cff572f6f89
+      internalID: -2019578556229538843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs9
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 158
+        width: 59
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc832bf9e9db17f458d427c25a2d2b1d
+      internalID: -8175200748217776895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs10
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 163
+        width: 48
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a1e2a62959fcf4fbfbe2756e3f4d21
+      internalID: -8504302182674944610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs11
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 187
+        width: 53
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364e3d4520fd4b54f83dc8b5c08a1312
+      internalID: -1003865575909558175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs12
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 156
+        width: 56
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2472c6f58c528674bbf3100f388e7a56
+      internalID: -5414454426381295161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs13
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 158
+        width: 416
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f024ca3cc55d9a0469ccb831194e9997
+      internalID: 2116567956250756550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leafs14
+      rect:
+        serializedVersion: 2
+        x: 2426
+        y: 164
+        width: 298
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a82a2af8ff498468ed86a4d5206424
+      internalID: -2664423059322203906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes_48
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 177
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226e949845df6f049a3b763b7687c6e8
+      internalID: 6253387023558726209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bushes_0
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 764
+        width: 44
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52f27c4e51b78b45abf7eec08f8e54a
+      internalID: -1366677981984774684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

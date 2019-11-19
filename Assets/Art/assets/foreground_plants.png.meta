@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: d3a877254befc8f4382878bcb996588a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5902187643829844699
+    second: foregroundplant1
+  - first:
+      213: -1078456822299678613
+    second: foregroundplant2
+  - first:
+      213: 5023501886977237808
+    second: foregroundplant3
+  - first:
+      213: 4311190063636206058
+    second: foregroundplant4
+  - first:
+      213: 6022136192878405557
+    second: foreground_plants_6
+  - first:
+      213: 7283612430375908130
+    second: foregroundplant5
+  - first:
+      213: 6192481855839642104
+    second: foregroundplant6
+  - first:
+      213: -3938127652161404949
+    second: foregroundplant8
+  - first:
+      213: -6734580043104931867
+    second: foregroundplant9
+  - first:
+      213: 8595693685982347156
+    second: foregroundplant10
+  - first:
+      213: 3794951991002608840
+    second: foregroundplant11
+  - first:
+      213: -8813485930567947805
+    second: foreground_plants_19
+  - first:
+      213: -856411848112420368
+    second: foreground_plants_23
+  - first:
+      213: -6928693749219245336
+    second: foreground_plants_25
+  - first:
+      213: 6111708093018328801
+    second: foregroundplant7
+  - first:
+      213: -5101945388784434391
+    second: foreground_plants_27
+  - first:
+      213: 1402320466621243272
+    second: foregroundplant12
+  - first:
+      213: -6304635254505253520
+    second: foregroundplant13
+  - first:
+      213: -8282339099386835099
+    second: foreground_plants_32
+  - first:
+      213: 6256333483700693927
+    second: foreground_plants_33
+  - first:
+      213: 8531207052906042982
+    second: foreground_plants_34
+  - first:
+      213: -1487750982387368784
+    second: foreground_plants_35
+  - first:
+      213: 6893347214982940292
+    second: foreground_plants_38
+  - first:
+      213: 3595913755158940931
+    second: foreground_plants_39
+  - first:
+      213: -8159584815660407030
+    second: foreground_plants_41
+  - first:
+      213: 8464134628704160823
+    second: foreground_plants_42
+  - first:
+      213: 677339892352869982
+    second: foreground_plants_43
+  - first:
+      213: 9172519127977614996
+    second: foreground_plants_44
+  - first:
+      213: 2629987161032305423
+    second: foreground_plants_45
+  - first:
+      213: -8533602315936138099
+    second: foreground_plants_46
+  - first:
+      213: 2016403917230758596
+    second: foreground_plants_47
+  - first:
+      213: 3209095269898784932
+    second: foreground_plants_48
+  - first:
+      213: 8002003150679054545
+    second: foreground_plants_51
+  - first:
+      213: 3337877100549380903
+    second: foreground_plants_52
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: foregroundplant1
+      rect:
+        serializedVersion: 2
+        x: 3286
+        y: 1425
+        width: 836
+        height: 1420
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad6753fe33b4924ca29b87346420881
+      internalID: 5902187643829844699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant2
+      rect:
+        serializedVersion: 2
+        x: 4258
+        y: 1412
+        width: 539
+        height: 906
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89179a79533fb843ab4bc28f33294dd
+      internalID: -1078456822299678613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant3
+      rect:
+        serializedVersion: 2
+        x: 4970
+        y: 1383
+        width: 672
+        height: 1211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b19e63f9dc940489d6607dd2e48805
+      internalID: 5023501886977237808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant4
+      rect:
+        serializedVersion: 2
+        x: 5751
+        y: 1396
+        width: 536
+        height: 809
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff8da7aea70a7143bbc05b3b0109400
+      internalID: 4311190063636206058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant5
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 133
+        width: 607
+        height: 1086
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9f96917960b0745ac291c0b4d990ee
+      internalID: 7283612430375908130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant6
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 117
+        width: 583
+        height: 964
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415fb3245e01b234ab3d5f1d9afc6a68
+      internalID: 6192481855839642104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant8
+      rect:
+        serializedVersion: 2
+        x: 2459
+        y: 98
+        width: 481
+        height: 787
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61fa01b50e0cd2445afddd40b51d591c
+      internalID: -3938127652161404949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant9
+      rect:
+        serializedVersion: 2
+        x: 3211
+        y: 69
+        width: 462
+        height: 797
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6246eed72e404d24ea6e6e6716e4029a
+      internalID: -6734580043104931867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant10
+      rect:
+        serializedVersion: 2
+        x: 3888
+        y: 24
+        width: 713
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a314daa2707ed44b6b877b79313714
+      internalID: 8595693685982347156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant11
+      rect:
+        serializedVersion: 2
+        x: 4717
+        y: 40
+        width: 481
+        height: 800
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17391ee4ecb714149930694e4517d0fa
+      internalID: 3794951991002608840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant7
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 95
+        width: 468
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac9fa8b72be1b54ab413067399720a7
+      internalID: 6111708093018328801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant12
+      rect:
+        serializedVersion: 2
+        x: 5401
+        y: 37
+        width: 430
+        height: 687
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90753aa8dee2e1742bd3f4d1957bd8db
+      internalID: 1402320466621243272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foregroundplant13
+      rect:
+        serializedVersion: 2
+        x: 5963
+        y: 40
+        width: 440
+        height: 665
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5151c1f1fd745e4692f4c1aeb45d640
+      internalID: -6304635254505253520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foreground_plants_41
+      rect:
+        serializedVersion: 2
+        x: 5315
+        y: 447
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded8aa0ba5c04cb438b25ba1a194b0fc
+      internalID: -8159584815660407030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foreground_plants_42
+      rect:
+        serializedVersion: 2
+        x: 5313
+        y: 434
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbac950e8514fa6439d7261915db32fc
+      internalID: 8464134628704160823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foreground_plants_47
+      rect:
+        serializedVersion: 2
+        x: 5854
+        y: 388
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3395c2de3e67a148b50d808ba156460
+      internalID: 2016403917230758596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: foreground_plants_52
+      rect:
+        serializedVersion: 2
+        x: 2597
+        y: 85
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e206198ed428343409560da5af52f70c
+      internalID: 3337877100549380903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
