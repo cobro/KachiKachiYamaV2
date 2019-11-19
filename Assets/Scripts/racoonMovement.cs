@@ -50,7 +50,7 @@ public class racoonMovement : MonoBehaviour
             racoonAnimator.SetBool("racoonWalking", true);
         }
 
-        if(CustomCharacterController.busted == true || CustomCharacterController.StrikeCounter == 5){
+        if(CustomCharacterController.busted == true || CustomCharacterController.winningState == true){
             StopAllCoroutines();
             tempRacoonSpeed=0;
             RacoonChecking = true;

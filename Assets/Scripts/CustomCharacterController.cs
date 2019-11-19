@@ -26,8 +26,10 @@ public class CustomCharacterController : MonoBehaviour
     public float CharacteranimationSpeedUpper = 2f;
     public static float particleVariable;
     public DialogueTrigger triggerEndDialogue;
+    public static bool winningState;
     void Start()
     {
+        winningState = false;
         busted = false;
         StrikeCounter = 0;
         particleVariable = 0;
@@ -60,6 +62,7 @@ public class CustomCharacterController : MonoBehaviour
         distanceFromRacoon = Mathf.Abs(RacoonPosition.transform.position.x - transform.position.x);
 
         if(StrikeCounter == 5){
+            winningState = true;
             StrikeCounter = 0;
             StartCoroutine(WaitForRestartWon());
         }
@@ -116,14 +119,16 @@ public class CustomCharacterController : MonoBehaviour
     }
     IEnumerator WaitForRestartLost(){
         triggerEndDialogue.TriggerDialogue(triggerEndDialogue.dialogueLost);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         BustedUI.SetActive(true);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
         IEnumerator WaitForRestartWon(){
         triggerEndDialogue.TriggerDialogue(triggerEndDialogue.dialogueWon);
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(30f);
         YouWonUI.SetActive(true);
+        yield return new WaitForSeconds(5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     

@@ -6893,7 +6893,7 @@ MonoBehaviour:
   m_RacoonMovementSmoothing: 0.05
   RacoonSpeed: 5
   RandomRotationLowerLimit: 2
-  RandomRotationUpperLimit: 6
+  RandomRotationUpperLimit: 5
   tempRacoonSpeed: 0
   RacoonSpriteRenderer: {fileID: 1364232351}
   QuestionMark: {fileID: 875205306}
