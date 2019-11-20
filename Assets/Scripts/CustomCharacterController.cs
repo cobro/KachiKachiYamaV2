@@ -89,6 +89,10 @@ public class CustomCharacterController : MonoBehaviour
             StartCoroutine(WaitForRestartLost());
         }
         mainCharacterAnimator.SetFloat("WalkCycleSpeed",Remap(Input.GetAxisRaw("Horizontal") * CharacterSpeed*3,0,CharacterSpeed*3,.6f,CharacteranimationSpeedUpper));
+    
+        if(Input.GetKeyUp(KeyCode.Escape)){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     float Remap (float value, float from1, float to1, float from2, float to2) {
@@ -126,7 +130,7 @@ public class CustomCharacterController : MonoBehaviour
     }
         IEnumerator WaitForRestartWon(){
         triggerEndDialogue.TriggerDialogue(triggerEndDialogue.dialogueWon);
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(28f);
         YouWonUI.SetActive(true);
         yield return new WaitForSeconds(5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
